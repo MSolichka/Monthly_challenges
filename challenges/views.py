@@ -29,6 +29,7 @@ def index(request):
         list_items += f"<li><a href = \"{month_path}\">{capitalized_month}</a></li>"
 
     response_data = f"<ul>{list_items}</ul>"
+
     return HttpResponse(response_data)
 
 
